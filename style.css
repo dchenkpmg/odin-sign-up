@@ -72,11 +72,26 @@ body {
 }
 
 .sidebar {
-    /* width: 800px; */
-    /* height: 100vh; */
-    /* position: relative; */
-    margin: 0;
+    position: relative;
+}
 
+.odin {
+    display: flex;
+    font-family: norse-bold, sans-serif; 
+    color: white;   
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+    top: 200px;
+    font-size: 10rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
 }
 
 .background {
@@ -121,4 +136,8 @@ body {
     /* margin: auto; */
     /* position: relative; */
 
+}
+
+.odin-img{
+   width: 125px; 
 }
