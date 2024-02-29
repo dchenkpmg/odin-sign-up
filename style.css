@@ -53,22 +53,23 @@ table {
 	border-spacing: 0;
 }
 
+
+:root {
+    --my-bg-color: #f2f2f2; /* Replace this with your preferred color */
+  }
+
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    /* overflow: hidden; */
-    /* vertical-align: top; */
 }
 
 .container {
     display: flex;
-    /* max-width: 100%; */
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
+    flex: 1;
     margin: 0;
-
-    /* height: 100vh; */
-    
+    background-color: var(--my-bg-color)
 }
 
 .sidebar {
@@ -87,6 +88,7 @@ body {
     font-size: 10rem;
     width: 100%;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .logo {
@@ -96,48 +98,85 @@ body {
 
 .background {
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.credits {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+
+a:link {
+    color: white;
 }
 
 .login {
     display: flex;
-    /* justify-content: flex-end; */
-    /* align-items: start; */
+    flex: 1;
+    align-items: start;
     flex-direction: column;
-    /* position: absolute; */
-    /* right: 0px; */
-    /* left: 1000px */
-    /* top: 0px; */
-    background-color: white;;
-    /* z-index: 1000; */
-    /* height: 100vh; */
-    /* flex: 0 1 300px; */
-    /* min-width: 200px; */
-    /* max-width: 500px; */
-    /* position: absolute; */
-
+    width: 100%;
+    background-color: var(--my-bg-color)
 }
 
 .hero {
-    /* padding: 0; */
-    /* margin: 0px 50px; */
-    /* margin-left: 0; */
-    /* position: absolute; */
+    margin: 200px 50px;
     font-weight: 900;
-    font-size: 20px;
-    /* margin: auto; */
-    /* display: flex; */
-    
+    font-size: 30px;
+    background-color: var(--my-bg-color);
 }
 
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.signup {
+    background-color: var(--my-bg-color);
+}
 .bg-img {
-    /* max-width: 100%; */
     max-height:100vh;
     margin: 0;
-    /* margin: auto; */
-    /* position: relative; */
-
 }
 
 .odin-img{
    width: 125px; 
 }
+
+.names {
+    display: flex;
+}
+.first-name {
+    display:flex;
+    flex-direction: column;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* label,input {
+    display:flex;
+    flex-direction:column;
+  } */
