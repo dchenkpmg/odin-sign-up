@@ -122,7 +122,9 @@ a:link {
 }
 
 .hero {
-    margin: 200px 50px;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-bottom: 50px;
     font-weight: 900;
     font-size: 30px;
     background-color: var(--my-bg-color);
@@ -138,6 +140,7 @@ a:link {
 .signup {
     background-color: var(--my-bg-color);
 }
+
 .bg-img {
     max-height:100vh;
     margin: 0;
@@ -147,8 +150,17 @@ a:link {
    width: 125px; 
 }
 
+legend {
+    margin: 50px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
 .names {
     display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 .first-name {
     display:flex;
@@ -162,6 +174,9 @@ a:link {
 
 .details {
     display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .phone {
@@ -174,9 +189,78 @@ a:link {
     flex-direction: column;
 }
 
+.security {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
 
+.password {
+    display: flex;
+    flex-direction: column;
+}
 
-/* label,input {
-    display:flex;
-    flex-direction:column;
-  } */
+.confirm {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: white;
+}
+
+.login-form {
+    width: 100%;
+    background-color: white ;
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5);
+    padding-bottom: 30px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 10px;
+    color: white;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.account-text {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.login-link {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    width: 300px;
+}
+
+input:focus {
+    outline: none;
+    padding: 10px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 1px black;
+}
