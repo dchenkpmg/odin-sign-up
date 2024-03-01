@@ -123,11 +123,12 @@ a:link {
 
 .hero {
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 8%;
     margin-bottom: 50px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 1.25rem;
     background-color: var(--my-bg-color);
+    max-width: 900px;
 }
 
 .form {
@@ -151,9 +152,9 @@ a:link {
 }
 
 legend {
-    margin: 50px;
+    margin: 30px 50px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 1.25rem;
 }
 
 .names {
@@ -206,14 +207,16 @@ legend {
     flex-direction: column;
 }
 
-form {
+.form-header {
     background-color: white;
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .login-form {
     width: 100%;
-    background-color: white ;
-    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5);
+    background-color: var(--my-bg-color);
     padding-bottom: 30px;
 }
 
@@ -229,17 +232,18 @@ button {
     border-radius: 10px;
     color: white;
     padding: 20px 60px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     outline: none;
+    width: 300px;
 }
 
 .account-text {
-    margin-top: 50px;
+    margin-top: 5%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .login-link {
@@ -251,7 +255,7 @@ button {
 input {
     padding: 10px;
     margin: 5px 1px 3px 0px;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     width: 300px;
@@ -262,5 +266,12 @@ input:focus {
     padding: 10px;
     margin: 5px 1px 3px 0px;
     border: 1px solid blue;
-    box-shadow: 1px 1px 1px 1px black;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+label {
+    font-size: 0.75rem;
+    color: grey;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
