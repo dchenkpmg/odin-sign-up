@@ -4,6 +4,7 @@ document.querySelector('#registrationForm').addEventListener('submit', (event) =
 
   if (password !== confirmPassword.value) {
     document.querySelector('#error').style.color = "red";
+    document.querySelector('#password').style.border
     document.querySelector('#error').style.fontSize = "12px";
     document.querySelector('#error').textContent = "*The passwords do not match.";
     event.preventDefault(); // prevent form submission. 
